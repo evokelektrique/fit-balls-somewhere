@@ -1,0 +1,78 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   font-size: 20px;
+   background: #fafafa;
+   text-align: center;
+}
+
+html, body, input, button {
+   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+#wrapper {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#description {
+   font-size: 30px;
+}
+
+#description,
+#calculator {
+   display: flex;
+   margin-bottom: 5rem;
+}
+
+.custom-input-wrapper {
+   position: relative;
+}
+
+.custom-input-wrapper .custom-input-description {
+   position: absolute;
+   top: -35px;
+   right: 0;
+   left: 0;
+   margin: 5px auto;
+   width: 100%;
+   font-weight: bold;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.custom-input-wrapper .custom-input {
+   border: 1px solid #ebebeb;
+   padding: 8px;
+   border-radius: 5px;
+   background: #fff;
+   color: blue;
+   box-shadow: 0px 0px 8px 0px #c6c6c6;
+   margin: 0 10px;
+   outline: none;
+   width: 100px;
+   transition: all .3s ease;
+}
+
+.custom-input-wrapper .custom-input:hover,
+.custom-input-wrapper .custom-input:focus {
+   border-color: blue;
+}
+
+.description-text {
+   align-self: center;
+}
+
+.green {
+   color: #399e3d;
+   font-size: 27px;
+   font-weight: bold;
+   border-bottom: 2px solid #399e3d;
+}
