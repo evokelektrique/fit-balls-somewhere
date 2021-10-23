@@ -111,13 +111,8 @@ function draw() {
 // Add an event listener to each input so whenever
 // they have been changed draw a new result in DOM.
 Array.from(document.querySelectorAll('input')).forEach(input => {
-   input.addEventListener('keyup', e => {
-      draw();
-   });
-
-   input.addEventListener('change', e => {
-      draw();
-   });
+   input.addEventListener('keyup', draw);
+   input.addEventListener('change', draw);
 });
 
 // Draw result at start
