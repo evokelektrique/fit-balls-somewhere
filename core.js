@@ -114,6 +114,10 @@ Array.from(document.querySelectorAll('input')).forEach(input => {
    input.addEventListener('keyup', e => {
       draw();
    });
+
+   input.addEventListener('change', e => {
+      draw();
+   });
 });
 
 // Draw result at start
